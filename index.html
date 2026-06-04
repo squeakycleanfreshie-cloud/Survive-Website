@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survive</title>
@@ -28,12 +29,42 @@
             object-fit: cover;
             display: block;
         }
+
+        .text-block {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 80%;
+            z-index: 10;
+        }
+
+        .text-block h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 2.2rem;
+            color: white;
+            text-shadow: 0 0 20px white, 0 0 40px white;
+            margin-bottom: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .text-block p {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            color: #ccc;
+            line-height: 2;
+        }
+
     </style>
 </head>
 <body>
     <div class ="poster">
         <img src="https://placehold.co/1920x1080" alt="campfire background">
+        <div class="text-block">
+        <h1>BUILD, EARN, SURVIVE</h1>
+        <p>Build offline or survival themed products, win camping and outdoor gear, survive in the wild</p>
+        </div>
     </div>
-    
 </body>
 </html>
