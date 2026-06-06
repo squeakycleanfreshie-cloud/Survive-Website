@@ -267,7 +267,10 @@
       animation-play-state: paused;
     }
 
-    
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
 
     .prize-card {
       border: 2px solid #3a5c3a;
@@ -387,12 +390,14 @@
       </div>
     </div>
 
+
+
     <div class="how-it-works">
       <h2>HOW IT WORKS</h2>
       <div class="steps">
 
         <div class="step">
-          <div class="step-icon-placeholder"></div>
+          <img src="create.png" alt="create" class="step-icon-placeholder">
           <div class="step-content">
             <h3>01 CREATE</h3>
             <p>Build a survival or offline<br>themed project, all by yourself, or in a team</p>
@@ -400,7 +405,7 @@
         </div>
 
         <div class="step">
-          <div class="step-icon-placeholder"></div>
+          <img src="ship.png" alt="ship" class="step-icon-placeholder">
           <div class="step-content">
             <h3>02 SHIP</h3>
             <p>Submit your project<br>to the Survive team, for reviewing</p>
@@ -408,7 +413,7 @@
         </div>
 
         <div class="step">
-          <div class="step-icon-placeholder"></div>
+          <img src="review.png" alt="review" class="step-icon-placeholder">
           <div class="step-content">
             <h3>03 REVIEW</h3>
             <p>The Survive team<br>checks your project for mistakes, and authenticity</p>
@@ -416,13 +421,14 @@
         </div>
 
         <div class="step">
-          <div class="step-icon-placeholder"></div>
+          <img src="earn.png" alt="earn" class="step-icon-placeholder">
           <div class="step-content">
             <h3>04 EARN PRIZES</h3>
             <p>Hours get converted to wood, spend wood in the shop<br>on outdoors gear and event tickets</p>
           </div>
         </div>
 
+  
       </div>
     </div>
   </section>
@@ -433,39 +439,39 @@
       <div class="carousel-track" id="carousel">
 
         <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Sticker Pack</p><p class="prize-cost">5 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Carabiner Set</p><p class="prize-cost">15 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Waterproof Phone Pouch</p><p class="prize-cost">20 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">S'mores Grant</p><p class="prize-cost">30 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Fire Starter Kit</p><p class="prize-cost">25 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hack Club Hoodie</p><p class="prize-cost">60 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Arcteryx Beanie</p><p class="prize-cost">80 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Headlamp</p><p class="prize-cost">40 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Emergency Survival Kit</p><p class="prize-cost">55 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Water Filter Bottle</p><p class="prize-cost">70 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hammock</p><p class="prize-cost">90 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Sleeping Bag</p><p class="prize-cost">120 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Camp Cooking Set</p><p class="prize-cost">100 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Tent</p><p class="prize-cost">250 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Patagonia Jacket</p><p class="prize-cost">350 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Event Ticket</p><p class="prize-cost">400 wood</p></div>
+        <div class="prize-card"><img src="cb.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Carabiner Set</p><p class="prize-cost">15 wood</p></div>
+        <div class="prize-card"><img src="pp.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Waterproof Phone Pouch</p><p class="prize-cost">20 wood</p></div>
+        <div class="prize-card"><img src="sm.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">S'mores Grant</p><p class="prize-cost">30 wood</p></div>
+        <div class="prize-card"><img src="fs.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Fire Starter Kit</p><p class="prize-cost">25 wood</p></div>
+        <div class="prize-card"><img src="ho.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hack Club Hoodie</p><p class="prize-cost">60 wood</p></div>
+        <div class="prize-card"><img src="ar.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Arcteryx Beanie</p><p class="prize-cost">80 wood</p></div>
+        <div class="prize-card"><img src="he.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Headlamp</p><p class="prize-cost">40 wood</p></div>
+        <div class="prize-card"><img src="su.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Emergency Survival Kit</p><p class="prize-cost">55 wood</p></div>
+        <div class="prize-card"><img src="wa.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Water Filter Bottle</p><p class="prize-cost">70 wood</p></div>
+        <div class="prize-card"><img src="ha.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hammock</p><p class="prize-cost">90 wood</p></div>
+        <div class="prize-card"><img src="sl.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Sleeping Bag</p><p class="prize-cost">120 wood</p></div>
+        <div class="prize-card"><img src="co.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Camp Cooking Set</p><p class="prize-cost">100 wood</p></div>
+        <div class="prize-card"><img src="te.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Tent</p><p class="prize-cost">250 wood</p></div>
+        <div class="prize-card"><img src="ja.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">North Face Jacket</p><p class="prize-cost">350 wood</p></div>
+        <div class="prize-card"><img src="ev.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Event Ticket</p><p class="prize-cost">400 wood</p></div>
 
-        <!-- duplicate for infinite loop -->
         <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Sticker Pack</p><p class="prize-cost">5 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Carabiner Set</p><p class="prize-cost">15 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Waterproof Phone Pouch</p><p class="prize-cost">20 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">S'mores Grant</p><p class="prize-cost">30 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Fire Starter Kit</p><p class="prize-cost">25 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hack Club Hoodie</p><p class="prize-cost">60 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Arcteryx Beanie</p><p class="prize-cost">80 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Headlamp</p><p class="prize-cost">40 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Emergency Survival Kit</p><p class="prize-cost">55 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Water Filter Bottle</p><p class="prize-cost">70 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hammock</p><p class="prize-cost">90 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Sleeping Bag</p><p class="prize-cost">120 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Camp Cooking Set</p><p class="prize-cost">100 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Tent</p><p class="prize-cost">250 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Patagonia Jacket</p><p class="prize-cost">350 wood</p></div>
-        <div class="prize-card"><img src="https://placehold.co/160x160" alt="prize" class="prize-img-placeholder"><p class="prize-name">Event Ticket</p><p class="prize-cost">400 wood</p></div>
+        <div class="prize-card"><img src="cb.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Carabiner Set</p><p class="prize-cost">15 wood</p></div>
+        <div class="prize-card"><img src="pp.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Waterproof Phone Pouch</p><p class="prize-cost">20 wood</p></div>
+        <div class="prize-card"><img src="sm.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">S'mores Grant</p><p class="prize-cost">30 wood</p></div>
+        <div class="prize-card"><img src="fs.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Fire Starter Kit</p><p class="prize-cost">25 wood</p></div>
+        <div class="prize-card"><img src="ho.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hack Club Hoodie</p><p class="prize-cost">60 wood</p></div>
+        <div class="prize-card"><img src="ar.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Arcteryx Beanie</p><p class="prize-cost">80 wood</p></div>
+        <div class="prize-card"><img src="he.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Headlamp</p><p class="prize-cost">40 wood</p></div>
+        <div class="prize-card"><img src="su.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Emergency Survival Kit</p><p class="prize-cost">55 wood</p></div>
+        <div class="prize-card"><img src="wa.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Water Filter Bottle</p><p class="prize-cost">70 wood</p></div>
+        <div class="prize-card"><img src="ha.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Hammock</p><p class="prize-cost">90 wood</p></div>
+        <div class="prize-card"><img src="sl.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Sleeping Bag</p><p class="prize-cost">120 wood</p></div>
+        <div class="prize-card"><img src="co.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Camp Cooking Set</p><p class="prize-cost">100 wood</p></div>
+        <div class="prize-card"><img src="te.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Tent</p><p class="prize-cost">250 wood</p></div>
+        <div class="prize-card"><img src="ja.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">North Face Jacket</p><p class="prize-cost">350 wood</p></div>
+        <div class="prize-card"><img src="ev.png" alt="prize" class="prize-img-placeholder"><p class="prize-name">Event Ticket</p><p class="prize-cost">400 wood</p></div>
+
 
       </div>
     </div>
