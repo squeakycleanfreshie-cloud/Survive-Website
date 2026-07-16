@@ -17,8 +17,8 @@ Survive is a build-to-earn challenge for Hack Club members. Participants build r
 
 ## AI Usage
 
-This project was built step-by-step with Claude (Anthropic). The following was AI-assisted:
+The following was AI-assisted:
 
 - **Infinite scrolling carousel** 
 
-All pixel art images were created by the author.
+All pixel art images were created by @goboshow.
